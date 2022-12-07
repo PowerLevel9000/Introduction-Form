@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+  <head>
+    <meta charset="UTF-8">
+    <title>registrationForm</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+  <body>
+
+    <h1 id="title">Information Required</h1>
+
+    <p id="description">Please fill out this form with the information</p>
+    <p id="description"> Adarsh need this to improve himself</p>
+
+    <!--the Registration form section-->
+
+    <form id="survey-form"action='https://formspree.io/f/xknedbyv'>
+     
+      <!--user information to ask-->
+
+      <fieldset>
+
+        <label id="name-label">Enter Your  Name: <input id="name" name="first-name" type="text" required placeholder=" Full name" autofill /></label>
+
+        <label id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="Email address" autofill /></label>
+
+
+        <label id="number-label">what is inbetween five and hundred <input id="number" name="logics" type="number" required min="6" max="99" placeholder="Just to irritate you" autofill /></label>
+
+        <!--the user's password-->
+
+        <label>Create a New Password: <input id="new-password" name="new-password" type="password" pattern="[a-z0-5]{10,}" required placeholder="with combination of small letters and 0-5" autofill /></label>
+
+        <!--who is the referrer-->
+
+
+        <label for="referrer"><p class="referrer-question">How did you hear about me?</p>
+
+        <!--options for selection-->
+
+          <select id ="dropdown">
+
+            <option value="">select one from options given</option>
+            <option value="1">Adarsh's Git Hub Account</option>
+            <option value="2">Codegammer2.0 YouTube Channel</option>
+            <option value="3">Full Stack Portfolio Project</option>
+            <option value="4">Adarsh's Linkedin profile</option>
+            <option value="5">Adarsh's Instagram Account</option>
+            <option value="6">Adarsh's Friend refference</option>
+            <option value="7">Other platforms</option>
+
+          </select>
+
+        </label>
+
+      </fieldset>
+      
+      <fieldset>
+
+      <!--friend type selection-->
+
+        <label for="mutual-friend"><input id="mutual-friend" type="radio" name="account-type" class="name" value="account" /> Mutual Friends Buddy</label>
+        <label for="professional-collaborater"><input id="professional-collaborater" type="radio" name="account-type" class="name" value="account" /> Professional Collaborater Buddy</label>
+        <label for="job-people"><input id="job-people" type="radio" name="account-type" class="name" value="account" /> The Recruiter or The Boss</label>
+
+        <!--our terms and condition.... ignore it is only for project-->
+        <!--but you have to accept it-->
+
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="name" value="checkboxes" value="pa"/> 
+          
+          I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> for P.A.
+        </label>
+
+        <label for="terms-and-conditions" name="terms-and-conditions">
+          <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="name" value="checkboxes" value = "ba"/>
+          
+           I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> for B.A.
+        </label>
+
+
+      </fieldset>
+
+      <fieldset>
+
+        <!--Little more information about my friend-->
+
+        <label for="age">Input your age (years): <input placeholder="your age please limits 12-120" id="age" type="number" name="age" min="13" max="120" /></label>
+        <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I like coding on the beach..."></textarea>
+        </label>
+      </fieldset>
+
+      <!--submit button-->
+
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
+
+<!--project end-->
